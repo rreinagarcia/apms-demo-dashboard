@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+/* Force light mode for this demo */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F4F6F9;
+  --foreground: #111827;
+
+  --seb-blue: #003DA5;
+  --seb-navy: #00205B;
+  --seb-green: #00B140;
+
+  color-scheme: light;
 }
 
 @theme inline {
@@ -12,11 +19,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Remove dark-mode override for the demo */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+html,
+body {
+  height: 100%;
 }
 
 body {
